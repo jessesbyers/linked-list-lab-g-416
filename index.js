@@ -11,11 +11,29 @@ function next(head, collection) {
 }
 
 function nodeAt(index, list, collection) {
-    // let head = collection[list]
     let node = collection[list]
     for (let i = 0; i < index; i++) {
-        // return node
-    node = collection[node.next]
+        node = collection[node.next]
     }
     return node
+}
+
+
+
+function addressAt(index, list, collection) {
+    let node = collection[list]
+
+    if (index > 0) {
+        for(let i = 0; i < index; i++){
+            node = node.next;
+        }
+        return node
+    } else {
+        return list
+    }
+}
+
+function indexAt(node, collection, list) {
+
+
 }
