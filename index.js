@@ -42,26 +42,12 @@ function indexAt(node, collection, list) {
     return index
 }
 
-// function insertNodeAt(index, value, collection, list) {
-//     let currentNode = headNode(list, collection)
-//     // for (let i = 0; index > i; i++) {
-//     //     currentNode = next(currentNode, collection)
-//     // }
-//     return currentNode.next
-// }
 
 function insertNodeAt(index, address, collection, list) {
-    let previousNode = nodeAt(index - 1, list, collection)
-    // let previousNodeIdx = indexAt(previousNode, collection, list)
-    // let previousNodeAddress = addressAt(previousNode, list, collection)
-    let subsequentNodeAddress = addressAt(subsequentNode, list, collection)
-    let subsequentNode = nodeAt(index, list, collection)
 
+}
 
-
-    previousNode.next = newNodeAddress
-    let newNode = collection[newNodeAddress]
-    newNode.next = subsequentNodeAddress
+function deleteNodeAt(index, list, collection) {
 
 
 }
